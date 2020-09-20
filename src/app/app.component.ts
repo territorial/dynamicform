@@ -9,7 +9,7 @@ import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.com
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  @ViewChild(DynamicFormComponent) form: DynamicFormComponent;
+  @ViewChild(DynamicFormComponent, { static: true }) form: DynamicFormComponent;
   regConfig: FieldConfig[] = [
     {
       type: "input",
